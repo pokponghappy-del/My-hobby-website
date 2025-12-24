@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#f6f7f8;
+  --sidebar:#3a5a60;
+  --card:#ffffff;
+  --soft:#edf6f9;
+  --text:#2f3e46;
+  --muted:#6c757d;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+.wrapper{
+  display:flex;
+  min-height:100vh;
+}
+aside{
+  width:240px;
+  background:var(--sidebar);
+  color:white;
+  padding:40px 25px;
+}
+aside h1{
+  margin-bottom:25px;
+}
+aside nav a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:12px 0;
+}
+main{
+  flex:1;
+  padding:50px 60px;
+}
+.section{
+  background:var(--card);
+  padding:40px;
+  border-radius:18px;
+  margin-bottom:40px;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+.section h2{
+  margin-bottom:15px;
+}
+.section p{
+  line-height:1.9;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+.image-box{
+  margin-top:20px;
+}
+.image-box img{
+  width:100%;
+  max-height:280px;
+  object-fit:cover;
+  border-radius:12px;
+}
+.artist-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:25px;
+}
+.artist-card{
+  background:var(--soft);
+  padding:20px;
+  border-radius:14px;
+}
+.artist-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+iframe{
+  width:100%;
+  height:315px;
+  border-radius:12px;
+  margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<aside>
+  <h1>Music</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="drawing.html">Drawing</a>
+    <a href="music.html">Music</a>
+    <a href="series.html">Series</a>
+  </nav>
+</aside>
+
+<main>
+
+<div class="section">
+  <h2>Why I Love Listening to Music</h2>
+  <p>
+    Music is an important part of my daily life. I listen to music when I feel tired,
+    stressed, happy, or even when I need motivation. It helps me focus, calm my mind,
+    and understand my emotions better.
+  </p>
+  <p>
+    Different types of music create different feelings. Sometimes I listen to soft
+    songs to relax, and other times I enjoy energetic songs to boost my mood.
+  </p>
+  <div class="image-box">
+    <img src="music background.jpg" alt="Listening to music">
+  </div>
+</div>
+
+<div class="section">
+  <h2>How I Started This Hobby</h2>
+  <p>
+    I started listening to music seriously when I was younger, mostly using my phone
+    and headphones. At first, it was just for entertainment, but over time it became
+    something meaningful to me.
+  </p>
+  <p>
+    Music slowly became something I rely on during study time, traveling, and before
+    sleeping.
+  </p>
+</div>
+
+<div class="section">
+  <h2>My Top 3 Favorite Artists</h2>
+
+  <div class="artist-grid">
+    <div class="artist-card">
+      <img src="polycat.jpg">
+      <h3>Polycat</h3>
+      <p>
+        Polycat is a Thai synth-pop band known for their retro 80s-inspired electronic sound. Their music combines catchy melodies with dreamy synths and smooth vocals, creating a nostalgic yet modern vibe that appeals to fans of upbeat pop and chill electronic tunes.This artist is one of my favorites because of their emotional songs and meaningful
+        lyrics. Their music feels very personal and relatable.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <img src="ariana.jpg">
+      <h3>Ariana Grande</h3>
+      <p>
+        Ariana Grande is an American pop and R&B singer recognized for her powerful vocal range and emotional delivery. Her music blends contemporary pop, R&B, and occasional dance elements, often featuring lush harmonies, catchy hooks, and themes of love, empowerment, and personal growth.I enjoy this artist’s unique voice and style. Their songs always stand out
+        and are easy to recognize.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <img src="bruno.jpg">
+      <h3>Bruno Mars</h3>
+      <p>
+        Bruno Mars is an American singer-songwriter and performer who blends pop, R&B, funk, soul, and reggae influences. His music is known for its groovy rhythms, infectious melodies, and high-energy performances, often paying homage to classic funk and soul while maintaining a contemporary pop sound.This artist’s music gives me comfort and inspiration, especially during
+        difficult times.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Example Music Video</h2>
+  <p>
+    This video represents the type of music I enjoy listening to.
+  </p>
+  <iframe src="https://www.youtube.com/watch?v=kPa7bsKwL-c&list=RDkPa7bsKwL-c&start_radio=1" allowfullscreen></iframe>
+</div>
+
+</main>
+</div>
+</body>
+</html>
